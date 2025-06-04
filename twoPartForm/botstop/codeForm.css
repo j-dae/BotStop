@@ -1,0 +1,13 @@
+iframe {
+	border: 0;
+	width: 214px;
+	height: 42px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	column-gap: 1em;
+}
+#code {
+	width: 90px;
+}

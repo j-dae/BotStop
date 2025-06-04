@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+dialog {
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 280px;
+	max-width: 80%;
+	border-radius: 1em;
+	margin-top: 12vh;
+}
+div#dContent {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+	align-items: flex-start;
+}
+.dRow {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+}
+input#dCode {
+	width: 70px;
+}
+.buttonRow {
+	display: flex;
+	align-items: center;
+	column-gap: 1em;
+}
+iframe {
+	border: 0;
+	width: 226px;
+	height: 42px;
+}
