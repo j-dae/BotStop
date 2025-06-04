@@ -33,5 +33,5 @@
 			<a href="../">&lt;&lt;</a>
 		</div>
 	</div>
-	<?php include 'include/dialog.php'; ?>
+	<?php include 'include/dialog.html'; ?>
 </body>

@@ -29,6 +29,6 @@ $cryptedCode = createCode();
 			</div>
 			<a href="../">&lt;&lt;</a>
 		</div>
-		<?php include 'include/dialog.php'; ?>
+		<?php include 'include/dialog.html'; ?>
 	</body>
 </html>
