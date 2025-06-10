@@ -30,7 +30,7 @@ class LinkHandler {
 			event.preventDefault();
 			var path = this.linkPath + '?emailId=' + this.emailId + '&auto=' + (this.auto ? 'true' : 'false');
 			httpGet(path, function(result) {
-				if (result.startsWith('1:'))
+				if (result.startsWith('2:'))
 					vDialog.link.success(result.substring(2));
 				else {
 					document.getElementById('eDialog').showModal();

@@ -63,12 +63,21 @@ class Dialog {
 			return;
 		}
 		httpGet(targetHandler.buildPath(codeInput.value), function(result) {
-			if (result.startsWith('0:')) {
-				vDialog.displayError(result.substring(2));
-				codeInput.value = '';
-				codeInput.focus();
-			} else if (result.startsWith('1:'))
-				targetHandler.success(result.substring(2));
+			switch (result.substring(0, 1)) {
+				case '0':
+					vDialog.dClose(null);
+					document.getElementById('eDialog').showModal();
+					document.getElementById('errorMsg').innerHTML = result.substring(2);
+					break;
+				case '1':
+					vDialog.displayError(result.substring(2));
+					codeInput.value = '';
+					codeInput.focus();
+					break;
+				case '2':
+					targetHandler.success(result.substring(2));
+					break;
+			}
 		});
 	}
 
