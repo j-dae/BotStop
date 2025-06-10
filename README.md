@@ -1,6 +1,6 @@
-### BotStop Examples
-This repository contains PHP examples using BotStop to protect email addresses and forms from robots.
-BotStop is a service implementing a CAPTCHA.
+### PHP CAPTCHA Examples
+This repository contains PHP CAPTCHA examples to protect email addresses and forms from robots.
+The examples use the free BotStop service.
 
 A **demo** of the examples is available [here](https://botstop.org/en/php).
 
